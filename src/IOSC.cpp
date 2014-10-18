@@ -29,7 +29,9 @@
         m.setAddress("/game");
         //this is OSC's URL like naming convention. You can use a root url address like structure and then everything under that address will be accessable by that message. It's very similar to a folder path on your hard drive. You can think of the game folder as your root directory and all the bits that are /game/someOtherName are inside of it.
 
-    
+        //test graphics
+        ofSetCircleResolution(250);
+
     }
 void IOSC::update()
 {
@@ -55,4 +57,52 @@ void IOSC::update()
 //                }
 //        }
         }
+}
+void IOSC::draw(){
+    ofBackground(0);
+    ofSetColor(255, 255, 0);
+    ofEllipse(xpos,ypos, 100, 100);
+    ofDrawBitmapString("Move the circle horizontally and vertically to change the tone.\n", 10,50);
+    
+
+}
+
+void IOSC::drag(int x, int y){
+    ofxOscMessage m;
+    float xscaled = ofMap(x, 0,ofGetWidth(), 0 ,1);
+    
+    if(x < 0)
+    {
+        xscaled = 0;
+    }
+    if(x > ofGetWidth())
+    {
+        xscaled =1;
+    }
+    
+    m.setAddress("/game/x");
+    
+    m.addFloatArg(xscaled);
+    sender.sendMessage(m);
+    
+    
+    ofxOscMessage m2;
+    
+    float yscaled = ofMap(y, 0,ofGetWidth(), 0 ,1);
+    
+    if(y < 0)
+    {
+        yscaled = 0;
+    }
+    if(y > ofGetHeight())
+    {
+        yscaled =1;
+    }
+    
+    m2.setAddress("/game/y");
+    
+    m2.addFloatArg(yscaled);
+    sender.sendMessage(m2);
+
+
 }

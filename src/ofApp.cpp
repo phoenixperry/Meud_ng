@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    currentScene = new Scene();
+    currentScene = new SceneOne();
 //    currentScene = &ofApp::scene2;
     currentScene->setup(); 
 }

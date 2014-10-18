@@ -16,14 +16,9 @@
 class Scene {
     
 public:
-    Scene();
-    void setup();
-    void draw();
-    void update();
-    ~Scene();
-    
-    IOSC *osc;
-    IArduino *device;
+    virtual void setup()=0;
+    virtual void draw()=0;
+    virtual void update()=0;
     
 };
 

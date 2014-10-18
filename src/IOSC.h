@@ -18,7 +18,11 @@ public:
     IOSC(); 
     void setup(string addy, int port_);
     void update();
+    void draw();
+    //I have no energey left to prove this one works but if you set up an event that
+    //will trigger from ofApp when the mouse is dragging the circle, this will work.
     
+    void drag(int x, int y);
     ofxOscSender sender;
     
     //you can set up a sender! We are going to use this to let us know what we our values are set to in our game as we change them, giving us the ability to reference them if they seem to be working and to save them into our game for later use.
@@ -33,6 +37,9 @@ public:
     
     int port;
     
+    //test graphics
+    int xpos;
+    int ypos;
     ~IOSC();
 };
 #endif /* defined(__NightGames__IOSC__) */

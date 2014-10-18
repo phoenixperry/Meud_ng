@@ -16,9 +16,12 @@ class SceneOne: public Scene
 {
 public:
     SceneOne();
-    void setupScene();
-    void updateScene();
-    void drawScene();
+    void setup();
+    void update();
+    void draw();
     ~SceneOne();
+    
+    IOSC *osc;
+    IArduino *device;
 };
 #endif /* defined(__NightGames__SceneExample__) */
