@@ -13,7 +13,8 @@ void ofApp::update(){
     currentScene->update();
         
     cout<< currentScene->osc->port <<endl; //fuck I hate forgetting a language :( This deferences the object and the variable it's holding.
-
+    currentScene->osc->xpos = mouseX;
+    currentScene->osc->ypos = mouseY;
     
 }
 
@@ -37,7 +38,7 @@ void ofApp::keyReleased(int key){
 
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y ){
-
+    currentScene->osc->drag(x, y);
 }
 
 //--------------------------------------------------------------

@@ -25,6 +25,7 @@ void SceneOne::update(){
     device->update();
 }
 void SceneOne::draw(){
+    osc->draw(); 
     device->testLed();
 }
 SceneOne::~SceneOne()

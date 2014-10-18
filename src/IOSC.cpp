@@ -43,19 +43,7 @@ void IOSC::update()
             //parse the message
             
             ofxOscMessage sendBack;
-//ADELLE - this is just code from my book example. It shows how to deal with an incoming message with a specific tag. You can think like tags in OSC kinda like URLS. You can just test if they are coming in and if they are do stuff. I can explain if you need me to - I left this example here for yo.
-//            if(m.getAddress() == "/game/max_enemy_amplitude")
-//            {
-//                max_enemy_amplitude = m.getArgAsFloat(0);
-//                
-//                //these values send back to OSC to display the current settings for visual feedback
-//                sendBack.addFloatArg(max_enemy_amplitude);
-//                sendBack.setAddress("/updatedVals/max_enemy_amplitude");
-//                sender.sendMessage(sendBack);
-//                
-//                cout << max_enemy_amplitude << endl;
-//                }
-//        }
+
         }
 }
 void IOSC::draw(){
