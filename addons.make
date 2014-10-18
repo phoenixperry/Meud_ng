@@ -1,0 +1,12 @@
+ofx3DModelLoader
+ofxGui
+ofxKinect
+ofxNetwork
+ofxOpenCv
+ofxOsc
+ofxVectorGraphics
+ofxAccelerometer
+ofxAndroid
+ofxiOS
+ofxMultiTouch
+ofxSynth
