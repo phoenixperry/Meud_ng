@@ -8,3 +8,4 @@
 
 #include "Scene.h"
 
+//purely virtual class has no implementation :) 

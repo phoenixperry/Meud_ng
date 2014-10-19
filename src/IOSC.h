@@ -9,6 +9,8 @@
 #ifndef __NightGames__IOSC__
 #define __NightGames__IOSC__
 
+//if you need osc - use this class 
+
 #include <stdio.h>
 #include "ofMain.h"
 #include "ofxOsc.h"

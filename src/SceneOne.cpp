@@ -52,8 +52,6 @@ void SceneOne::drag(int x, int y)
         xscaled =1;
     }
     
-
-    
     float yscaled = ofMap(y, 0,ofGetWidth(), 0 ,1);
     
     if(y < 0)

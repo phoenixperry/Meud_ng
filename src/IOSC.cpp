@@ -41,6 +41,8 @@ void IOSC::update()
             ofxOscMessage m;
             receiver.getNextMessage(&m);
             //parse the message
+            //feel free to flesh this one out if we are using it and use it to pipe data back to
+            //scene. 
         }
 }
 //this method is for sending out
