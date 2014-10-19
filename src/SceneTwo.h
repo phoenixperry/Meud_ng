@@ -17,6 +17,7 @@ public:
     void setup();
     void draw();
     void update();
+    void drag(int x, int y);
     SceneTwo();
     ~SceneTwo(); 
 };

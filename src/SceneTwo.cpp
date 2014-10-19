@@ -14,5 +14,6 @@ void SceneTwo::draw(){
     ofSetColor(0, 255, 0);
     ofRect(255, 255, 100, 100);
 };
+void drag(int x, int y){}
 
 SceneTwo::~SceneTwo(){}

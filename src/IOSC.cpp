@@ -36,61 +36,64 @@
 void IOSC::update()
 {
         while (receiver.hasWaitingMessages()) {
-            
+            //this is for incoming OSC -- right now it's not used.
             //get the next message
             ofxOscMessage m;
             receiver.getNextMessage(&m);
             //parse the message
-            
-            ofxOscMessage sendBack;
-
         }
 }
-void IOSC::draw(){
-    ofBackground(0);
-    ofSetColor(255, 255, 0);
-    ofEllipse(xpos,ypos, 100, 100);
-    ofDrawBitmapString("Move the circle horizontally and vertically to change the tone.\n", 10,50);
-    
-
-}
-
-void IOSC::drag(int x, int y){
-    ofxOscMessage m;
-    float xscaled = ofMap(x, 0,ofGetWidth(), 0 ,1);
-    
-    if(x < 0)
-    {
-        xscaled = 0;
-    }
-    if(x > ofGetWidth())
-    {
-        xscaled =1;
-    }
-    
-    m.setAddress("/game/x");
-    
-    m.addFloatArg(xscaled);
-    sender.sendMessage(m);
-    
-    
+//this method is for sending out
+void IOSC::sendOut(float x, float y)
+{
     ofxOscMessage m2;
-    
-    float yscaled = ofMap(y, 0,ofGetWidth(), 0 ,1);
-    
-    if(y < 0)
-    {
-        yscaled = 0;
-    }
-    if(y > ofGetHeight())
-    {
-        yscaled =1;
-    }
-    
     m2.setAddress("/game/y");
     
-    m2.addFloatArg(yscaled);
+    m2.addFloatArg(y);
     sender.sendMessage(m2);
-
+    
+    ofxOscMessage m;
+    m.setAddress("/game/x");
+    m.addFloatArg(x);
+    sender.sendMessage(m);
 
 }
+//void IOSC::drag(int x, int y){
+//    ofxOscMessage m;
+//    float xscaled = ofMap(x, 0,ofGetWidth(), 0 ,1);
+//    
+//    if(x < 0)
+//    {
+//        xscaled = 0;
+//    }
+//    if(x > ofGetWidth())
+//    {
+//        xscaled =1;
+//    }
+//    
+//    m.setAddress("/game/x");
+//    
+//    m.addFloatArg(xscaled);
+//    sender.sendMessage(m);
+//    
+//    
+//    ofxOscMessage m2;
+//    
+//    float yscaled = ofMap(y, 0,ofGetWidth(), 0 ,1);
+//    
+//    if(y < 0)
+//    {
+//        yscaled = 0;
+//    }
+//    if(y > ofGetHeight())
+//    {
+//        yscaled =1;
+//    }
+//    
+//    m2.setAddress("/game/y");
+//    
+//    m2.addFloatArg(yscaled);
+//    sender.sendMessage(m2);
+//
+//
+//}

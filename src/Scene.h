@@ -19,7 +19,8 @@ public:
     virtual void setup()=0;
     virtual void draw()=0;
     virtual void update()=0;
-    
+    //for changes in mouseX and mouseY
+    virtual void drag(int x, int y)=0;
 };
 
 #endif /* defined(__NightGames__Scene__) */

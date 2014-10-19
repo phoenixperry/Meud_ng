@@ -20,8 +20,14 @@ public:
     void update();
     void draw();
     ~SceneOne();
-    
+    // scene specific behavoir methods 
+    void drag(int x, int y);
+    //hardware needs for this specific scene
     IOSC *osc;
     IArduino *device;
+    
+    //graphic needs for this scene
+    int xpos;
+    int ypos;
 };
 #endif /* defined(__NightGames__SceneExample__) */
