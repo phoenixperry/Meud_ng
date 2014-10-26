@@ -2,7 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    currentScene = new SceneOne();
+    currentScene = new SceneTwo();
 //    currentScene = &ofApp::scene2;
     currentScene->setup(); 
 }
@@ -12,7 +12,7 @@ void ofApp::update(){
     
     currentScene->update();
         
-    cout<< currentScene->osc->port <<endl; //fuck I hate forgetting a language :( This deferences the object and the variable it's holding.
+   // cout<< currentScene->osc->port <<endl; //fuck I hate forgetting a language :( This deferences the object and the variable it's holding.
  
     currentScene->drag(mouseX, mouseY);
     
