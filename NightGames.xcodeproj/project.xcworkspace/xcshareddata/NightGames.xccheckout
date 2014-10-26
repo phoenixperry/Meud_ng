@@ -14,15 +14,19 @@
 		<string>https://github.com/openframeworks/openFrameworks.git</string>
 		<key>656B2B8370D63BE2D4C6FD3D5F3892A63EEDDE1D</key>
 		<string>https://github.com/phoenixperry/Meud_ng.git</string>
+		<key>E57FBE9611406DF2667239BE7FA21B32E179F886</key>
+		<string>https://github.com/patriciogonzalezvivo/ofxPulseSensor.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>NightGames.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2DE9C8846D9375EAACFABA8963120E8E7719BAF5</key>
-		<string>../../../../..</string>
+		<string>../../..</string>
 		<key>656B2B8370D63BE2D4C6FD3D5F3892A63EEDDE1D</key>
 		<string>../..</string>
+		<key>E57FBE9611406DF2667239BE7FA21B32E179F886</key>
+		<string>../../../../../addons/ofxPulseSensor</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/phoenixperry/Meud_ng.git</string>
@@ -38,7 +42,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>2DE9C8846D9375EAACFABA8963120E8E7719BAF5</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
@@ -47,6 +51,14 @@
 			<string>656B2B8370D63BE2D4C6FD3D5F3892A63EEDDE1D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>NightGames</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E57FBE9611406DF2667239BE7FA21B32E179F886</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxPulseSensor</string>
 		</dict>
 	</array>
 </dict>
