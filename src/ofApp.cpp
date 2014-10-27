@@ -1,9 +1,10 @@
 #include "ofApp.h"
+#include "IArduino.h"
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-    currentScene = new SceneTwo();
-//    currentScene = &ofApp::scene2;
+    currentScene = new SceneThree();
+    //currentScene = &ofApp::scene2;
     currentScene->setup(); 
 }
 
@@ -15,6 +16,7 @@ void ofApp::update(){
    // cout<< currentScene->osc->port <<endl; //fuck I hate forgetting a language :( This deferences the object and the variable it's holding.
  
     currentScene->drag(mouseX, mouseY);
+   
     
 }
 
@@ -27,12 +29,14 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    
+    // need to point this to currentScene whenever a new move is done
+    currentScene->keyPressed(key);
 }
 
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
    // currentScene = &scene1;
+     currentScene->keyReleased(key);
     
 }
 

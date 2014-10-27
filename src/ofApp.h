@@ -4,6 +4,8 @@
 #include "Scene.h"
 #include "SceneOne.h"
 #include "SceneTwo.h"
+#include "SceneThree.h"
+
 class ofApp : public ofBaseApp{
 
 	public:
@@ -20,8 +22,10 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
-   //     SceneOne *currentScene;
-        SceneTwo *currentScene;
+        //SceneOne *currentScene;
+        //SceneTwo *currentScene;
+        SceneThree *currentScene;
+    
     
     
 };
