@@ -37,6 +37,7 @@ public:
     int myCircleX;
     int myCircleY;
     int myCircleRadius;
+    int colorVal;
     
     
     SceneThree();
