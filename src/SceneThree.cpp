@@ -26,11 +26,11 @@ SceneThree::SceneThree():Scene(){
 void SceneThree::setup(){
     osc->setup("192.168.178.15", 8000);
     device->setup("/dev/tty.usbmodem1421");
-};
+}
 void SceneThree::update(){
     device->update();
     osc->update();
-};
+}
 
 void SceneThree::keyPressed(int key){
     ofSetColor(40, 255, 255);
@@ -55,7 +55,8 @@ void SceneThree::draw(){
     ofCircle(xpos, ypos, 20);
     ofDrawBitmapString("By keeping the cursor in the circle, the circle will get bigger and the light will stay on on\n", 10,50);
     
-};
+    
+}
 
 void SceneThree::drag(int x, int y){
     xpos = x;
@@ -73,7 +74,7 @@ void SceneThree::drag(int x, int y){
 }
 
 //--------------------------------------------------------------
-void SceneThree::mouseMoved(int x, int y ){
+void SceneThree::mouseMoved(int x, int y ){ //mouse move same as drag
     cout << "mousemoved " << x << "," << y << endl;
     //xpos = x;
     //ypos = y;

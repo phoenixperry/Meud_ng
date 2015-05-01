@@ -10,3 +10,5 @@ ofxAndroid
 ofxiOS
 ofxMultiTouch
 ofxSynth
+ofxJSON
+ofxTonic

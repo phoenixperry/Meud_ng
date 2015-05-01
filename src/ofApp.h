@@ -5,6 +5,7 @@
 #include "SceneOne.h"
 #include "SceneTwo.h"
 #include "SceneThree.h"
+#include "SceneFour.h"
 
 class ofApp : public ofBaseApp{
 
@@ -24,7 +25,8 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
         //SceneOne *currentScene;
         //SceneTwo *currentScene;
-        SceneThree *currentScene;
+        //SceneThree *currentScene;
+        SceneFour *currentScene;
     
     
     

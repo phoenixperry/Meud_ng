@@ -51,8 +51,11 @@
 		B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802251BAF1B35B1D67B32FD0 /* ofxSliderGroup.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		C15685D0FAAAA2B189081EE1 /* IOSC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28D331B4504AEF43E7EF2CF7 /* IOSC.cpp */; };
+		C2234C2F1AEB0049002B9AC8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2234C2D1AEB0049002B9AC8 /* Player.cpp */; };
+		C2234C321AEB0053002B9AC8 /* Bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2234C301AEB0053002B9AC8 /* Bullet.cpp */; };
 		C27BE25619FDB62A00661853 /* SceneThree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C27BE25419FDB62A00661853 /* SceneThree.cpp */; };
 		C2B7714E50909A7BCAE5A51C /* texture3DS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB605E48A7D7E1902D8C19C5 /* texture3DS.cpp */; };
+		C2DBE60E1A059C3500288ABF /* SceneFour.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2DBE60C1A059C3500288ABF /* SceneFour.cpp */; };
 		C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BC8881B3C8C0A1C45F042E7A /* OscPrintReceivedElements.cpp */; };
 		D0DF23542A19F29D856A2D3C /* SceneTwo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 285F55C3262C68859C828C4F /* SceneTwo.cpp */; };
 		D31F5C1B140C59B2AF1533A8 /* registration.c in Sources */ = {isa = PBXBuildFile; fileRef = 71958293AC5292DE4B7C619D /* registration.c */; };
@@ -272,8 +275,14 @@
 		BF2F2AA872288D30F53983EF /* tilt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = tilt.c; path = ../../../addons/ofxKinect/libs/libfreenect/src/tilt.c; sourceTree = SOURCE_ROOT; };
 		BF88F02779DD820913ACEA06 /* ofxTCPClient.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTCPClient.cpp; path = ../../../addons/ofxNetwork/src/ofxTCPClient.cpp; sourceTree = SOURCE_ROOT; };
 		C1C56D20A1A57DC44096BFE7 /* ofxCvContourFinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCvContourFinder.h; path = ../../../addons/ofxOpenCv/src/ofxCvContourFinder.h; sourceTree = SOURCE_ROOT; };
+		C2234C2D1AEB0049002B9AC8 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Player.cpp; sourceTree = "<group>"; };
+		C2234C2E1AEB0049002B9AC8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		C2234C301AEB0053002B9AC8 /* Bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Bullet.cpp; sourceTree = "<group>"; };
+		C2234C311AEB0053002B9AC8 /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
 		C27BE25419FDB62A00661853 /* SceneThree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneThree.cpp; sourceTree = "<group>"; };
 		C27BE25519FDB62A00661853 /* SceneThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneThree.h; sourceTree = "<group>"; };
+		C2DBE60C1A059C3500288ABF /* SceneFour.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SceneFour.cpp; sourceTree = "<group>"; };
+		C2DBE60D1A059C3500288ABF /* SceneFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneFour.h; sourceTree = "<group>"; };
 		C2FAC65C491D4231379F3298 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscReceiver.cpp; path = ../../../addons/ofxOsc/src/ofxOscReceiver.cpp; sourceTree = SOURCE_ROOT; };
 		C4FB85020773DA0F09B8B6CE /* ts_gtest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ts_gtest.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/ts/ts_gtest.h; sourceTree = SOURCE_ROOT; };
 		C58862C6D212C8E8A83810F4 /* ofxOscMessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscMessage.h; path = ../../../addons/ofxOsc/src/ofxOscMessage.h; sourceTree = SOURCE_ROOT; };
@@ -987,6 +996,12 @@
 				3A5C6693D327171CB9F02262 /* SceneTwo.h */,
 				C27BE25419FDB62A00661853 /* SceneThree.cpp */,
 				C27BE25519FDB62A00661853 /* SceneThree.h */,
+				C2DBE60C1A059C3500288ABF /* SceneFour.cpp */,
+				C2234C2D1AEB0049002B9AC8 /* Player.cpp */,
+				C2234C2E1AEB0049002B9AC8 /* Player.h */,
+				C2234C301AEB0053002B9AC8 /* Bullet.cpp */,
+				C2234C311AEB0053002B9AC8 /* Bullet.h */,
+				C2DBE60D1A059C3500288ABF /* SceneFour.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1198,6 +1213,7 @@
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				1E25DEE396BC4A3ABBC5BA79 /* IArduino.cpp in Sources */,
 				C15685D0FAAAA2B189081EE1 /* IOSC.cpp in Sources */,
+				C2DBE60E1A059C3500288ABF /* SceneFour.cpp in Sources */,
 				85AE65F04F163000EF630F5C /* Scene.cpp in Sources */,
 				205D1A766D5D3CCCE1D36238 /* SceneOne.cpp in Sources */,
 				D0DF23542A19F29D856A2D3C /* SceneTwo.cpp in Sources */,
@@ -1210,12 +1226,14 @@
 				483908258D00B98B4BE69F07 /* ofxLabel.cpp in Sources */,
 				F285EB3169F1566CA3D93C20 /* ofxPanel.cpp in Sources */,
 				837220E80EB56CD44AD27F2A /* ofxSlider.cpp in Sources */,
+				C2234C321AEB0053002B9AC8 /* Bullet.cpp in Sources */,
 				B56FE57CC35806596D38118C /* ofxSliderGroup.cpp in Sources */,
 				1CD33E884D9E3358252E82A1 /* ofxToggle.cpp in Sources */,
 				7ADB04AF67C568EAFAEBA546 /* ofxKinectExtras.cpp in Sources */,
 				686B0DF6249B52E1A85B39EC /* ofxKinect.cpp in Sources */,
 				C27BE25619FDB62A00661853 /* SceneThree.cpp in Sources */,
 				0F8F016776681D468C0D0949 /* audio.c in Sources */,
+				C2234C2F1AEB0049002B9AC8 /* Player.cpp in Sources */,
 				ACE7DC9A3223ED5EE1B80074 /* cameras.c in Sources */,
 				F4135EEFC911E9ED211FB6F9 /* core.c in Sources */,
 				E55DEEF784A10419E444669E /* flags.c in Sources */,
